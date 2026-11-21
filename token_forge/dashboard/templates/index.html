@@ -730,9 +730,9 @@
 2026-07-07T21:11:35.126002+05:30 [WARNING] [ThreadCoordinator] Thread context switch latency is higher than 3 microseconds.
 2026-07-07T21:11:35.126002+05:30 [WARNING] [ThreadCoordinator] Thread context switch latency is higher than 3 microseconds.
 2026-07-07T21:11:35.129999+05:30 [ERROR] [MatchingEngine] Critical error: failed to resolve order flow toxicity for order_id=9872.
-  at com.antigravity.oms.MatchingEngine.executeTrade(MatchingEngine.java:234)
-  at com.antigravity.oms.MatchingEngine.processOrder(MatchingEngine.java:102)
-  at com.antigravity.oms.SystemServer.main(SystemServer.java:45)
+  at com.apex.oms.MatchingEngine.executeTrade(MatchingEngine.java:234)
+  at com.apex.oms.MatchingEngine.processOrder(MatchingEngine.java:102)
+  at com.apex.oms.SystemServer.main(SystemServer.java:45)
 2026-07-07T21:11:35.132000+05:30 [INFO] [SystemServer] Shuttling engine down gracefully...`,
             
             semantic: `The gen-AI landscape has shifted dramatically over the past year. LLMs have become a commodities market, where multiple providers offer models with varying capabilities and prices. When architecting an application, developers often choose GPT-4o or Claude 3.5 Sonnet because they are premium flagship models. However, using these models for basic tasks like classification or short text summaries can be highly cost-inefficient. That is why smart model routing is so important. By introducing an intelligence router in the system, simple requests can be routed to Gemini 1.5 Flash or GPT-4o-mini, saving up to 85% in billing. At the same time, we must maintain prompt caches. Prompt caching keeps KV tensors warm at the provider level, cutting pricing for repeated prefixes by 90%. Thus, combining routing, semantic caching, and context pruning allows developers to build extremely high-efficiency agents.`,
